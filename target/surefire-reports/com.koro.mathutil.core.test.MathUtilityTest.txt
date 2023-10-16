@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: com.koro.mathutil.core.test.MathUtilityTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.050 s -- in com.koro.mathutil.core.test.MathUtilityTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! -- in com.koro.mathutil.core.test.MathUtilityTest
+com.koro.mathutil.core.test.MathUtilityTest.verifyFactorialGivenRightArgumentReturns5Ok -- Time elapsed: 0.008 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <120> but was: <1200>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:166)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:161)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:628)
+	at com.koro.mathutil.core.test.MathUtilityTest.verifyFactorialGivenRightArgumentReturns5Ok(MathUtilityTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
