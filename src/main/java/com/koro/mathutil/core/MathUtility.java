@@ -20,7 +20,8 @@ public class MathUtility {
         if (n == 0 || n == 1) {
             return 1;
         }
-        long result = 1; // biến tích lũy, gom dồn vệc nhân, biến con heo
+        long result = 10; // biến tích lũy, gom dồn vệc nhân, biến con heo
+        //sống sot đến for,
         // accumnlation
         for (int i = 2; i <= n; i++) {
             result *= i;
