@@ -37,3 +37,19 @@ public class MathUtilityTest {
         assertEquals(120, MathUtility.getFactorial(5));
     }
 }
+//3 Test case trên bad smells vì chỉ khác nhau phần data
+//Trong nghề kiểm thử có 1 kĩ thuật là tách hẳn data kiểm thử ra
+//1 chỗ cho dễ nhìn, dễ quan lí đc data thiếu đủ hay ko
+
+//sau đó ta đưa bộ data này vào trong câu lệnh so sánh ASSERT()
+//Qua các tham số (PARAM)
+//Tức là assertequals (ễpcted, actual) là 2 tham số
+//ứng vs bộ data đc tách ra
+//          120    5!
+//          720    6!
+//          ...
+
+//      Mảng [4][2] {0, 1} {1, 1}
+//Code nhìn gọn, phát hiện đc thiếu đủ test data, test case
+//Kĩ thuật tách data kiểm thử ra khỏi câu lệnh so sánh -> đc gọi
+//Là DDT - DATA DRIVEN TESTING - KIỂM THỬ THEO HƯỚNG TÁCH DATA RIÊNG LẺ
